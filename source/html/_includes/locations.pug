@@ -1,0 +1,53 @@
+mixin location-content(title, text)
+        .location__content
+            h4.location__content__title #{title}
+            p.location__content__text #{text}
+            .location__content__icons
+                svg.location__icon
+                    use(xlink:href='/assets/images/symbol-defs.svg#icon-airplane')
+                svg.location__icon
+                    use(xlink:href='/assets/images/symbol-defs.svg#icon-travel-taxi-cab')
+                svg.location__icon
+                    use(xlink:href='/assets/images/symbol-defs.svg#icon-lock-closed')
+                svg.location__icon
+                    use(xlink:href='/assets/images/symbol-defs.svg#icon-coffee')
+                svg.location__icon
+                    use(xlink:href='/assets/images/symbol-defs.svg#icon-translate')
+            button.location__content__btn Book now
+
+section.locations
+    .location.location--1
+        .location__gallery
+            .location__gallery__main: img(src="/assets/images/location-1 00.28.17.jpg?noresize") 
+            .location__gallery__sub
+                img(src="assets/images/location-2 00.28.17.jpg?noresize") 
+                img(src="assets/images/location-3.jpg?noresize") 
+                img(src="assets/images/location-4 00.28.17.jpg?noresize") 
+        +location-content('Osaka','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et')
+
+    .location.location--2
+        .location__gallery
+            .location__gallery__main: img(src="/assets/images/location-4 00.28.17.jpg?noresize") 
+            .location__gallery__sub
+                img(src="assets/images/location-1 00.28.17.jpg?noresize") 
+                img(src="assets/images/location-3.jpg?noresize") 
+                img(src="assets/images/location-4 00.28.17.jpg?noresize") 
+        +location-content('Kyoto','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et')
+        
+    .location.location--3
+        .location__gallery
+            .location__gallery__main: img(src="/assets/images/location-3.jpg?noresize") 
+            .location__gallery__sub
+                img(src="assets/images/location-1 00.28.17.jpg?noresize") 
+                img(src="assets/images/location-3.jpg?noresize") 
+                img(src="assets/images/location-4 00.28.17.jpg?noresize") 
+        +location-content('Nagano','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et')
+    
+    .location.location--4
+        .location__gallery
+            .location__gallery__main: img(src="/assets/images/location-2 00.28.17.jpg?noresize") 
+            .location__gallery__sub
+                img(src="assets/images/location-1 00.28.17.jpg?noresize") 
+                img(src="assets/images/location-3.jpg?noresize") 
+                img(src="assets/images/location-4 00.28.17.jpg?noresize") 
+        +location-content('Kagoshima','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et')

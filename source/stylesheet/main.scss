@@ -1,5 +1,23 @@
-$body-background: #eee;
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-body {
-    background: $body-background;
-}
+@import "base/animations";
+@import "base/base";
+@import "base/normalize";
+@import "base/preloader";
+@import "base/typography";
+
+
+@import "components/header";
+@import "components/slidecontrol";
+@import "components/vacations-ideas";
+@import "components/locations";
+@import "components/features";
+@import "components/contact-form";
+@import "components/footer";
+
+// @import "layout/footer";
+
+
+// @import "pages/home";
+

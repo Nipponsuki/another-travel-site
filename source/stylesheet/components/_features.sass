@@ -1,0 +1,48 @@
+.features
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 2rem
+    transition: all .7s ease-in
+    opacity: 0
+
+    &--is-showing
+        opacity: 1
+
+    @media (max-width: 850px)
+        flex-direction: column
+        margin: 0 5rem 0 5rem
+
+.feature 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin: 2rem 9rem 2rem 9rem
+
+    @media (max-width: 850px)
+        margin: 2rem 2rem 2rem 2rem
+
+    
+
+
+
+    &__icon
+        width: 8rem
+        height: 8rem
+        padding: 1rem
+        background: $color-secondary-light
+        fill: #fff 
+        border-radius: 4rem
+        margin-bottom: 2rem
+        transition: all ease-in
+    
+    &__title
+        font-size: 2rem
+        margin-bottom: 2rem
+        text-align: center
+
+
+    &__text
+        font-size: 1.6rem
+        text-align: center

@@ -49,7 +49,7 @@ gulp.task('server', () => {
 gulp.task('images', () => {
   return gulp.src(config.images.entry)
   .pipe($changed(config.images.output))
-  .pipe($imagemin())
+  //.pipe($imagemin())
   .pipe($size({ title: '[images]', gzip: true }))
   .pipe(gulp.dest(config.images.output));
 });
